@@ -1,17 +1,89 @@
+<link rel="stylesheet" href="tab1.page.scss">
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
+  <ion-item>
+    <ion-searchbar></ion-searchbar>
+  </ion-item>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Home</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-list>
+    <ion-slides pager="true">
+      <ion-slide>
+        <img src="./assets/slide1.jpeg">
+      </ion-slide>
+      <ion-slide>
+        <img src="./assets/slide2.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img src="./assets/slide3.avif">
+      </ion-slide>
+    </ion-slides>
+    <br>
+    <ion-item-group>
+      <ion-item-divider>
+        <ion-label>Sản phẩm nổi bật</ion-label>
+      </ion-item-divider>
+      <ion-grid>
+        <ion-row>
+          <ion-col><img src="./assets/ao1.avif"></ion-col>
+          <ion-col><img src="./assets/ao2.avif"></ion-col>
+          <ion-col><img src="./assets/ao3.avif"></ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item-group>
+    <br>
+    <ion-item-group>
+      <ion-item-divider>
+        <ion-label>Sản phẩm mới</ion-label>
+      </ion-item-divider>
+      <ion-grid>
+        <ion-row>
+          <ion-col><img src="./assets/ao1.avif"></ion-col>
+          <ion-col><img src="./assets/ao2.avif"></ion-col>
+          <ion-col><img src="./assets/ao3.avif"></ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item-group>
+    <br>
+    <ion-item-group>
+      <ion-item-divider>
+        <ion-label>Flashsale</ion-label>
+      </ion-item-divider>
+      <ion-grid>
+        <ion-row>
+          <ion-col><img src="./assets/ao1.avif"></ion-col>
+          <ion-col><img src="./assets/ao2.avif"></ion-col>
+          <ion-col><img src="./assets/ao3.avif"></ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item-group>
+    <br>
+    <ion-item-group>
+      <ion-item-divider>
+        <ion-label>Combo tiết kiệm</ion-label>
+      </ion-item-divider>
+      <ion-grid>
+        <ion-row>
+          <ion-col><img src="./assets/ao1.avif"></ion-col>
+          <ion-col><img src="./assets/ao2.avif"></ion-col>
+          <ion-col><img src="./assets/ao3.avif"></ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item-group>
+    <br>
+    <ion-grid width="device-width">
+      <ion-row>
+        <ion-col class="col_subcate" ><ion-button class="subcategories"><img src="./assets/ao1.avif"></ion-button></ion-col>
+        <ion-col class="col_subcate" ><ion-button class="subcategories"><img src="./assets/ao1.avif"></ion-button></ion-col>
+        <ion-col class="col_subcate" ><ion-button class="subcategories"><img src="./assets/ao1.avif"></ion-button></ion-col>
+        <ion-col class="col_subcate" ><ion-button class="subcategories"><img src="./assets/ao1.avif"></ion-button></ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-list>
+  
 </ion-content>
